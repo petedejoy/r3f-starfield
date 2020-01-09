@@ -70,7 +70,7 @@ export default () => {
       onPointerOver={e => onHover(e, true)}
       onPointerOut={e => onHover(e, false)}
     >
-      <icosahedronBufferGeometry attach="geometry" args={[0.015]} />
+      <icosahedronBufferGeometry attach="geometry" args={[0.005]} />
       <meshStandardMaterial
         attach="material"
         color={color}

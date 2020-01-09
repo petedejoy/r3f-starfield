@@ -7,7 +7,7 @@ export default () => {
     return (
       <mesh>
         <sphereBufferGeometry args={[0.7, 30, 30]} attach="geometry" />
-        <meshBasicMaterial color='#fffff' attach="material" wireframe />
+        <meshBasicMaterial color='#fffff' attach="material" visible="false" />
       </mesh>
     );
   };

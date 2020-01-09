@@ -2,7 +2,6 @@ import "./styles.css";
 
 import React from "react";
 import ReactDOM from "react-dom";
-import Credits from "./components/Credits";
 import { Canvas } from "react-three-fiber";
 import Cubes from "./components/Cubes";
 import Lights from "./components/Lights";
@@ -12,7 +11,7 @@ import Stars from "./components/Cubes/Stars"
 function App() {
     return (
         <>
-            <Canvas>
+            <Canvas camera={{ position:[0,0,.5], near: 0.01, far: 10000 }}>
                 <Lights />
                 <Cubes />
                 <Environment />

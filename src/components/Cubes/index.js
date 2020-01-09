@@ -8,10 +8,10 @@ export default () => {
   const group = useRef();
 
   useFrame(() => {
-    group.current.rotation.y += 0.001;
+    group.current.rotation.y += 0.0001;
   });
 
-  const nodesCubes = map(new Array(1000), (el, i) => {
+  const nodesCubes = map(new Array(5000), (el, i) => {
     return <Stars />;
   });
 
